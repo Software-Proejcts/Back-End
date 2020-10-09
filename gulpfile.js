@@ -1,6 +1,8 @@
-function defaultTask(cb) {
-    // place code for your default task here
-    cb();
+const { src, dest } = require('gulp');
+
+function buildServer(cb) {
+    return src('src/server/*.js')
+        .pipe(dest('build/server/'));
 }
 
-exports.default = defaultTask
+exports.default = buildServer
