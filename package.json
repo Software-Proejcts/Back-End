@@ -2,7 +2,8 @@
   "name": "back-end",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "build/server/index.js",
+  "private": true,
   "scripts": {
     "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/Software-Projects-1/Back-End/issues"
   },
-  "homepage": "https://github.com/Software-Projects-1/Back-End#readme"
+  "homepage": "https://github.com/Software-Projects-1/Back-End#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "mocha": "^8.1.3"
+  }
 }
