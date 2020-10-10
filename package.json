@@ -4,6 +4,8 @@
   "description": "",
   "main": "build/server/index.js",
   "private": true,
+  "author": "Dean Sellas, (ADD YOUR NAMES HERE)",
+  "license": "ISC",
   "scripts": {
     "start": "node .",
     "build": "gulp",
@@ -12,9 +14,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Software-Projects-1/Back-End.git"
-  },
-  "author": "",
-  "license": "ISC",
+  },  
   "bugs": {
     "url": "https://github.com/Software-Projects-1/Back-End/issues"
   },
