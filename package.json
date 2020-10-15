@@ -14,7 +14,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Software-Projects-1/Back-End.git"
-  },  
+  },
   "bugs": {
     "url": "https://github.com/Software-Projects-1/Back-End/issues"
   },
@@ -22,5 +22,8 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "mocha": "^8.1.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }

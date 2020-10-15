@@ -1,8 +1,13 @@
-const { src, dest } = require('gulp');
+const gulp = require('gulp');
 
-function buildServer(cb) {
-    return src('src/server/*.js')
-        .pipe(dest('build/server/'));
+function buildClient(cb) {
+    return gulp.src('src/www/**')
+        .pipe(gulp.dest('build/www/'));
 }
 
-exports.default = buildServer
+function buildServer(cb) {
+    return gulp.src('src/server/*.js')
+        .pipe(gulp.dest('build/server/'));
+}
+
+exports.default = gulp.parallel(buildServer, buildClient);
