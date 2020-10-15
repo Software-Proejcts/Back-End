@@ -2,7 +2,7 @@ const gulp = require('gulp');
 
 function buildClient(cb) {
     return gulp.src('src/www/**')
-        .pipe(gulp.dest('build/www/'));
+        .pipe(gulp.dest('build/server/www/'));
 }
 
 function buildServer(cb) {
