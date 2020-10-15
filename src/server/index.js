@@ -17,4 +17,4 @@ app.get("/", function (req, res) {
 
 // Start the server.
 console.log('Listening at http://localhost:80');
-server.listen(80);
+server.listen(process.env.PORT || 8080);
