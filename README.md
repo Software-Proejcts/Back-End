@@ -8,12 +8,20 @@
 #### Install All Dependencies
 ```npm install```
 
+### ENV File
+Create a file in the base directory named `.env`. This file will be used to store environment variables and private keys. Look in the slack to see what needs to be added to this file.
+
 #### Current List of Dependencies
  * [Gulp](https://gulpjs.com/)
    * Used for building the app.
  * [Mocha](https://mochajs.org/)
    * Used for unit tests
- * <i>More will be added later</i>
+ * [Express](https://expressjs.com/)
+   * Used for HTTP requests and routing
+ * [MongoDB](https://docs.mongodb.com/drivers/node/quick-start)
+   * Used to connect node to database
+ * [DotENV](https://www.npmjs.com/package/dotenv)
+   * Loads environment variables. Use it to store passwords and API keys so they are not public
 
 ---
 
@@ -23,7 +31,7 @@
 ```npm run-script build```
 
 ### Start The App
-```npm start```
+```npm run dev```
 
 <i>Add More Later</i>
 
