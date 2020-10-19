@@ -22,6 +22,10 @@ class MongoDBHandler {
         databasesList.databases.forEach(db => console.log(` - ${db.name}`));
     }
 
+    async Find(database, collection, query) {
+        return await this.client.db(database).collection(collection).findOne(query);
+    }
+
     async close() {
         await this.client.close();
     }

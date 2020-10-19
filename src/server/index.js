@@ -29,6 +29,8 @@ server.listen(env.PORT || 8080, () => {
         // connects MongoDB
         await MongoDB.connect();
         await MongoDB.listDatabases();
+        // How to do a basic query.
+        console.log(await MongoDB.Find('sample_mflix', 'movies', { title: 'Back to the Future' }));
     }
     connectMongo();
 });
