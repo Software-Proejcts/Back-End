@@ -26,6 +26,10 @@ class MongoDBHandler {
         return await this.client.db(database).collection(collection).findOne(query);
     }
 
+    async Create(database, collection, data) {
+        return await this.client.db(database).collection(collection).insertOne(data);
+    }
+
     async close() {
         await this.client.close();
     }
