@@ -27,7 +27,17 @@ class MongoDBHandler {
     }
 
     async Create(database, collection, data) {
-        return await this.client.db(database).collection(collection).insertOne(data);
+        let uid;
+        await this.client.db(database).collection(collection).insertOne(data, function (err, res) {
+            // console.log(res.insertedId);
+            uid = res.insertedId;
+        });
+        return uid
+    }
+
+    // https://www.w3schools.com/nodejs/nodejs_mongodb_update.asp
+    async UpdateOne(database, collection, query, values) {
+        return await this.client.db(database).collection(collection).updateOne(query, values);
     }
 
     async close() {
